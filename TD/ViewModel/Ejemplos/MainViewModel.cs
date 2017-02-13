@@ -7,6 +7,10 @@ using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Threading;
 
 using TD.Service;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Shapes;
+using Windows.UI.Xaml.Media;
 
 namespace TD.ViewModel
 {
@@ -19,32 +23,21 @@ namespace TD.ViewModel
             {
                 new NavItem()
                 {
-                    Text = "Home",
+                    Text = "Settings",
                     ButtonText = "\uE80F",
-                    Command = new RelayCommand(() => NavigateTo("Home"), () => ActivePage != "Home" )
+                    Icon = (Geometry)Application.Current.Resources["Book_Icon"],
+                    Command = new RelayCommand(() => NavigateTo("Settings"), () => ActivePage != "Settings" )
                 }
             };
 
             SecondaryNavItems = new ObservableCollection<NavItem>()
             {
-                new NavItem()
-                {
-                    Text = "Visit website",
-                    ButtonText = "\uE909",
-                    Command = new RelayCommand(() =>
-                    {
-                        var uri = new Uri("http://google.com/", UriKind.Absolute);
-#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
-                        Launcher.LaunchUriAsync(uri);
-#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
-                    })
-                },
-                new NavItem()
-                {
-                    Text = "Settings",
-                    ButtonText = "\uE713",
-                    Command = new RelayCommand(() => NavigateTo("Settings"), () => ActivePage != "Settings" )
-                }
+                //new NavItem()
+                //{
+                //    Text = "Settings",
+                //    ButtonText = "\uE713",
+                //    Command = new RelayCommand(() => NavigateTo("Settings"), () => ActivePage != "Settings" )
+                //}
             };
 
             navigationService.Navigated += NavigationService_Navigated;

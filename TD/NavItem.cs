@@ -1,6 +1,9 @@
 ﻿using System.ComponentModel;
 
 using GalaSoft.MvvmLight.Command;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Shapes;
+using Windows.UI.Xaml.Media;
 
 namespace TD
 {
@@ -9,6 +12,8 @@ namespace TD
         public string Text { get; set; }
 
         public string ButtonText { get; set; }
+
+        public Geometry Icon { get; set; }
 
         public RelayCommand Command { get; set; }
 

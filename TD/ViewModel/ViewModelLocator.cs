@@ -21,7 +21,9 @@ namespace TD.ViewModel
             {
                 var nav = new TD.Service.NavigationService();
                 nav.Configure("Home", typeof(HomePage));
+                nav.Configure("Designer", typeof(SettingsPage));
                 nav.Configure("Settings", typeof(SettingsPage));
+                
 
                 return nav;
             });

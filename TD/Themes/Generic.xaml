@@ -1,0 +1,47 @@
+<!--<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TD">
+
+    <Style TargetType="local2:DesignerPage" xmlns:local2="using:TD.Pages">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local2:DesignerPage">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="local2:CustomControl1" xmlns:local2="using:TD.Pages">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local2:CustomControl1">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="local2:CustomControl1" xmlns:local2="using:TD.Pages">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local2:CustomControl1">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>-->
